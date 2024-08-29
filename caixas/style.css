@@ -1,0 +1,40 @@
+.cabeca{
+    max-width: 90vw;
+    background-color: red;
+    text-align: center;
+    margin: 0 auto;
+}
+.grid{
+    max-width: 90vw;
+    margin: 20px auto;
+    background-color: blueviolet;
+    height: 600px;
+}
+
+.card{
+    width: 43vw; 
+    margin: 1vw 1vw;
+    background-color: red;
+    height: 100px;
+    float: left;
+}
+.cards{
+    width: 28vw;
+    margin: 1vw 1vw;
+    background-color: black;
+    height: 100px;
+    float: left;
+}
+.four{
+    width: 20vw;
+    margin: 1vw 1.25vw;
+    background-color: white;
+    height: 100px;
+    float: left;
+}
+.solo{
+    width: 88vw;
+    margin: 1vw 1vw;
+    background-color: cyan;
+    height: 100px;
+}

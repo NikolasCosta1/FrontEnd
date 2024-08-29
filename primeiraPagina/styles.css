@@ -1,0 +1,87 @@
+body{
+    width: 700px;
+}
+.blog{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.nome{
+    background-color: #BC8F8F;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    width: 250px;
+    height: 20px;
+    float: left;
+    padding: 20px;
+    margin: 20px;
+}
+.data{
+    background-color: #A020F0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    width: 250px;
+    height: 20px;
+    float: right;
+    padding: 20px;
+    margin: 20px;
+}
+.att{
+    background-color: #FF69B4;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    width: 250px;
+    height: 20px;
+    float: left;
+    padding: 20px;
+    margin: 20px;
+}
+.curso{
+    background-color: #FF6347;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    width: 250px;
+    height: 20px;
+    float: right;
+    padding: 20px;
+    margin: 20px;
+}
+.rotina{
+    background-color: #FFD700;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    width: 250px;
+    height: 230px;
+    padding: 20px;
+    float: left;
+    margin: 20px;
+}
+.hobbies{
+    background-color: #E6E6FA;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    width: 250px;
+    height: 230px;
+    padding: 20px;
+    float: right;
+    margin: 20px;
+}
+.viajem{
+    background-color: #B0E0E6;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    width: 250px;
+    height: 230px;
+    padding: 20px;
+    float: right;
+    margin: 20px;
+}
+.banda{
+    background-color: #ADFF2F;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    width: 250px;
+    height: 230px;
+    padding: 20px;
+    float: left;
+    margin: 20px;
+}
