@@ -1,0 +1,57 @@
+html{
+    box-sizing: border-box;
+    font-size: 16px;
+}
+  
+*, *:before, *:after{
+    box-sizing: inherit;
+}
+  
+body, h1, h2, h3, h4, h5, h6, p, ol, ul{
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+}
+  
+ol, ul{
+    list-style: none;
+}
+  
+img{
+    max-width: 100%;
+    height: auto
+}
+input{
+    border: black solid 1px;
+    margin: 10px auto;
+    margin-right: 10px;
+}
+
+input, select {
+    margin: 10px 0;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    flex: 1 1 100%; 
+}
+input:focus, select:focus {
+    border: 2px solid purple;
+}
+
+@media (min-width: 800px) {
+    input, select {
+        flex: 1 1 calc(33.33% - 20px);
+    }
+}
+
+@media (min-width: 400px) and (max-width: 799px) {
+    input, select {
+        flex: 1 1 calc(50% - 20px); 
+    }
+}
+
+@media (max-width: 399px) {
+    input, select {
+        flex: 1 1 100%; 
+    }
+}

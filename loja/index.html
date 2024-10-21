@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de loja</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form id="lojaForm">
+        <label for="nome">Nome</label>
+        <input type="text" placeholder="Ex: José">
+
+        <label for="endereco">Endereço</label>
+        <input type="text" placeholder="Ex: Rua fds">
+
+        <label for="dias">Dias de funcionamento:</label>
+        <label for="">segunda</label>
+        <input type="checkbox">
+        <label for="">terça</label>
+        <input type="checkbox">
+        <label for="">quarta</label>
+        <input type="checkbox">
+        <label for="">quinta</label>
+        <input type="checkbox">
+        <label for="">sexta</label>
+        <input type="checkbox">
+
+        <label for="horaAbertura">horario de abertura: </label>
+        <input type="time" id="horaAbertura" required>
+        <label for="horaFechamento">horario de fechamento: </label>
+        <input type="time" id="horaFechamento" required>
+        <button type="submit">Cadastrar loja</button>
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>
