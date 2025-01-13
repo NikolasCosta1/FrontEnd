@@ -18,30 +18,49 @@
     </section>
     <section class="tudo">
         <section class="imagens">
-            <div class="divPequenas">
-                <div class="img">
-                    <img id="imagem1" src="" alt="">
-                </div>
-                <div class="img">
-                    <img id="imagem2" src="" alt="">
-                </div>
-                <div class="img">
-                    <img id="imagem3" src="" alt="">
-                </div>
-            </div>
+            <a href="../index.html" class="btn-voltar">
+                <i class="fas fa-arrow-left"></i> 
+            </a>
             <div class="divGrande">
                 <div class="img">
-                    <img id="imagem4" src="" alt="">
+                    <img id="img4" src="" alt="">
+                </div>
+            </div>
+            <div class="divPequenas">
+                <div class="img">
+                    <img id="img1" src="" alt="">
+                </div>
+                <div class="img">
+                    <img id="img2" src="" alt="">
+                </div>
+                <div class="img">
+                    <img id="img3" src="" alt="">
                 </div>
             </div>
         </section>
         <section class="infos">
             <h1 id="roupa"></h1>
-            <h2 id="valor"></h2>
+            <h2>
+                <span id="exPreco"></span> 
+                <span id="valor"></span> 
+            </h2>
             <input type="number" name="quantidade" id="iquantidade" value="1">
             <button id="btnCarrinho">Adicionar ao carrinho</button>
         </section>
     </section>
-    <script src="../js/comprar.js"></script>
+    <h2 class="promo">Receba Promoções!</h2>
+    <section class="formulario">
+        <form action="contato" class="contato" id="contato">
+            <div class="row">
+                <input type="text" name="nome" id="inome" placeholder="Insira seu nome">
+                <input type="email" name="email" id="iemail" placeholder="Insira seu email">
+            </div>
+            <div class="row">
+                <input type="tel" name="telefone" id="itelefone" placeholder="Insira seu telefone">
+                <input type="submit" value="Enviar">
+            </div>
+        </form>
+    </section>
+    <script src="../js/produto.js"></script>
 </body>
 </html>

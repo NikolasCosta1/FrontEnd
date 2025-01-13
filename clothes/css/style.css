@@ -28,7 +28,7 @@ ol, ul{
 .navOptions{
     text-decoration: none;
     color: black;
-    font-size: 1rem;
+    font-size: 1.2rem;
 }
 .dodev{
     text-decoration: none;
@@ -194,4 +194,145 @@ h2{
 
 #imgC {
     margin-right: 8px;
+}
+.tudo{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin: 20px;
+}
+.imagens{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    max-width: 500px;
+    flex: 1;
+}
+.divGrande {
+    display: flex;
+    justify-content: center;
+}
+.divGrande img {
+    width: 300px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.divPequenas {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+}
+.divPequenas .img img{
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+.divPequenas .img img:hover {
+    transform: scale(1.1);
+    border-color: #007bff;
+}
+.infos {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 20px;
+    max-width: 400px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    height: 400px;
+}
+.tudo .infos {
+    align-self: stretch; 
+}
+.infos h1 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin: 0;
+}
+
+.infos h2 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.infos input[type="number"] {
+    width: 80px;
+    padding: 5px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.infos button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.infos button:hover {
+    background-color: #0056b3;
+}
+#exPreco{
+    font-size: 20px;
+    color: #a9a9a9;
+    text-decoration: line-through;
+}
+
+#valor {
+    font-size: 50px;
+    color: #333;  
+}
+.btn-voltar {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: rgba(255, 255, 255, 0.7); 
+    padding: 10px;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.btn-voltar:hover {
+    background-color: rgba(255, 255, 255, 0.9);
+}
+.btn-voltar i {
+    font-size: 24px;
+    color: #333; 
+}
+.divGrande {
+    position: relative;
+}
+.promo{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+.formulario{
+    margin: 10px;
+    padding: 10px;
 }
