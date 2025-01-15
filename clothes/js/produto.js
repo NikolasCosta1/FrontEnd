@@ -38,6 +38,37 @@ botaoCarrinho.addEventListener('click', e =>{
     if(JSON.parse(window.localStorage.getItem('array')) == undefined){
         window.localStorage.setItem('array', JSON.stringify([]))
     }
-})
 
-console.log(window.localStorage);
+
+let arrayGet = JSON.parse(window.localStorage.getItem('array'));
+let quantidade = Number(document.getElementById('iquantidade').value);
+
+if (isNaN(quantidade) || quantidade <= 0) {
+    alert("Por favor, insira uma quantidade válida.");
+    return;
+}
+
+let nomeProduto = window.localStorage.getItem('nome');
+let valorUnitario = parseFloat(window.localStorage.getItem('valor'));
+
+let produtoExistente = arrayGet.find(item => item.nome == nomeProduto);
+
+if(produtoExistente){
+    produtoExistente.quantidade += quantidade;
+    produtoExistente.valor = valorUnitario * produtoExistente.quantidade;
+}else{
+    let objeto = {
+        nome: nomeProduto,
+        valor: valorUnitario * quantidade,
+        quantidade: quantidade,
+        valorUnitario: valorUnitario
+    };
+    arrayGet.push(objeto);
+}
+
+window.localStorage.setItem('array', JSON.stringify(arrayGet))
+
+console.log(arrayGet)
+
+alert('Produto adicionado ao carrinho')
+})

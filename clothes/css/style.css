@@ -336,3 +336,104 @@ h2{
     margin: 10px;
     padding: 10px;
 }
+.conteudo {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+.titulo {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.titulo h1 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+.tabela {
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr 1fr;
+    gap: 1rem;
+    padding: 1rem;
+    background-color: white;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.tabela span {
+    font-weight: bold;
+    color: #333;
+}
+
+#carrinho p {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr 1fr;
+    gap: 1rem;
+    align-items: center;
+    padding: 1rem;
+    background-color: white;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+#carrinho img {
+    width: 200px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+#carrinho span {
+    font-size: 1rem;
+    color: #333;
+}
+
+#total {
+    text-align: right;
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin: 2rem 0;
+    color: var(--primary-color);
+}
+
+#divApagar {
+    display: flex;
+    justify-content: flex-end;
+    margin: 2rem 0;
+}
+
+#apagar button {
+    background-color: white;
+    color: #007bff;
+    border: 2px solid #007bff;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    
+}
+
+#apagar button:hover {
+    background-color: #007bff;
+    color: white;
+    transform: translateY(-2px);
+}
+
+#carrinho:empty::before {
+    content: "Seu carrinho está vazio";
+    display: block;
+    text-align: center;
+    padding: 3rem;
+    background-color: white;
+    border-radius: 8px;
+    color: #333;
+    font-size: 1.1rem;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
