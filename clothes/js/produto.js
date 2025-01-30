@@ -72,3 +72,42 @@ console.log(arrayGet)
 
 alert('Produto adicionado ao carrinho')
 })
+
+document.addEventListener("DOMContentLoaded", function () {
+    const form = document.getElementById("contato");
+
+    form.addEventListener("submit", async function (event) {
+        event.preventDefault(); 
+
+        const nome = document.getElementById("inome").value;
+        const email = document.getElementById("iemail").value;
+        const telefone = document.getElementById("itelefone").value;
+
+        const formData = {
+            nome: nome,
+            email: email,
+            telefone: telefone
+        };
+
+        try {
+            const response = await fetch("https://apigenerator.dronahq.com/api/KB97Irwb/data", { 
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify(formData)
+            });
+
+            if (!response.ok) {
+                throw new Error("Erro ao enviar dados.");
+            }
+
+            alert("Cadastro realizado com sucesso!");
+            form.reset(); 
+
+        } catch (error) {
+            alert("Ocorreu um erro. Tente novamente mais tarde.");
+            console.error("Erro:", error);
+        }
+    });
+});
